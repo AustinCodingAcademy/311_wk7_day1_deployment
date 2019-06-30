@@ -29,7 +29,7 @@ _Keep in mind that your port (4001) may be different when running the applicatio
 
 ## Get familiar with the system
 
-Lookin in the routes/controllers files and get a feel for what the system is doing. Run the `npm run start:dev` command so that we can test our application and use Postman to become familiar with the different routes that are available. We will do this same run-through once the application is deployed to Google Cloud. 
+Look in the routes/controllers files and get a feel for what the system is doing. Run the `npm run start:dev` command so that we can test our application and use Postman to become familiar with the different routes that are available. We will do this same run-through once the application is deployed to Google Cloud. 
 
 ## Deployment Steps
 
