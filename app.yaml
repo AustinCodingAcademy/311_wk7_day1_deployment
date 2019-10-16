@@ -1,4 +1,5 @@
 runtime: nodejs10
 
 env_variables:
-  CLOUD_INSTANCE: fake-instance
+  CLOUD_INSTANCE: root-alignment-256114:us-central1:fsalehi
+  CLOUDSDK_CORE_PROJECT: root-alignment-256114
