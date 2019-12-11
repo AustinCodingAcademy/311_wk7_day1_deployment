@@ -1,7 +1,7 @@
 {
   "name": "311_wk2_day2_express-continued",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Setup",
   "main": "index.js",
   "scripts": {
     "start:dev": "nodemon ./index.js",
@@ -18,5 +18,13 @@
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.17.1",
     "nodemon": "^1.18.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambarrick/311_wk7_day1_deployment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sambarrick/311_wk7_day1_deployment/issues"
+  },
+  "homepage": "https://github.com/sambarrick/311_wk7_day1_deployment#readme"
 }

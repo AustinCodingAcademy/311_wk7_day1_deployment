@@ -1,4 +1,4 @@
 runtime: nodejs10
 
 env_variables:
-  CLOUD_INSTANCE: fake-instance
+  CLOUD_INSTANCE: halogen-chemist-258002:us-central1:first-instance
