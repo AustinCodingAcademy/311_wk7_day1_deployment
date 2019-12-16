@@ -9,7 +9,7 @@ class Connection {
         connectionLimit: 100,
         host: '34.66.112.184',
         user: 'root',
-        password: 'mySQL2423',
+        password: '',
         database: 'admin'
       }
 
