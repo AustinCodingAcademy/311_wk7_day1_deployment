@@ -10,7 +10,8 @@ class Connection {
         host: '35.223.184.144',
         user: 'root',
         password: 'Guillendubois123',
-        database: 'admin'
+        database: 'admin',
+        port: 3306
       }
 
       if (process.env.NODE_ENV === 'production' && process.env.CLOUD_INSTANCE) {
