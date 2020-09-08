@@ -4,11 +4,13 @@
 
 Initialize and run the app: `npm install` && `npm start`.
 
+>*WINDOW'S USER NOTE: if you're on Windows and getting a error like:"['NODE_ENV' is not recognized as an internal or external command, operable program or batch file.](https://stackoverflow.com/questions/11928013/node-env-is-not-recognized-as-an-internal-or-external-command-operable-comman/40967643)", use [win-node-env](https://www.npmjs.com/package/win-node-env)*
+
 The app is using `nodemon`. Any changes made (and saved) will cause the server to restart.
 
 Navigate to the `sql/connections.js` file and alter the following fields to reflect your database setup:
 
-```
+```yaml
   host: 'localhost',
   user: 'root',
   password: 'password',
@@ -23,13 +25,13 @@ Finally, in MySQL Workbench, run the `initialize.sql` script (on the "admin" dat
 
 This app is the completed version of the assignment from last class.
 
-The basic setup, routes/controllers, SQL statements and authentication has been done for us. Our job is simply to deploy the application. 
+The basic setup, routes/controllers, SQL statements and authentication has been done for us. Our job is simply to deploy the application.
 
 _Keep in mind that your port (4001) may be different when running the application_
 
 ## Get familiar with the system
 
-Look in the routes/controllers files and get a feel for what the system is doing. Run the `npm run start:dev` command so that we can test our application and use Postman to become familiar with the different routes that are available. We will do this same run-through once the application is deployed to Google Cloud. 
+Look in the routes/controllers files and get a feel for what the system is doing. Run the `npm run start:dev` command so that we can test our application and use Postman to become familiar with the different routes that are available. We will do this same run-through once the application is deployed to Google Cloud.
 
 ## Deployment Steps
 
@@ -89,7 +91,7 @@ _THESE ARE THE MAIN DEPLOYMENT STEPS_
 
 ## A NOTE ON THE SQL CONFIGURATION
 
-Checkout the `sql/connection.js` file. It looks slightly different than the one from your last assignment. That's because App Engine and Cloud SQL (both of the Google Cloud services we've used) know how to talk to each other automatically. However, in order for the system to understand that we need to add an additional property to the connection pool setup, _socketPath_. Notice that we've also included a `.env` with the variable we need for the second part of the socketPath. That is our Cloud SQL instance. We can find this on the dashboard/homepage of Cloud SQL.
+Checkout the `sql/connection.js` file. It looks slightly different than the one from your last assignment. That's because App Engine and Cloud SQL (both of the Google Cloud services we've used) know how to talk to each other automatically. However, in order for the system to understand that we need to add an additional property to the connection pool setup, _socketPath_. Notice that we've also included a `.env` (on line 8 in `package.json`) with the variable we need for the second part of the socketPath. That is our Cloud SQL instance. We can find this on the dashboard/homepage of Cloud SQL.
 
 Essentially, what this connection allows us to do is run the app locally with one configuration and also prepare the app for production use when it's deployed on App Engine. 
 
