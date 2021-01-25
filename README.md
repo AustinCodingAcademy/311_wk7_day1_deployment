@@ -4,7 +4,7 @@
 
 Initialize and run the app: `npm install` && `npm start`.
 
->*WINDOW'S USER NOTE: if you're on Windows and getting a error like:"['NODE_ENV' is not recognized as an internal or external command, operable program or batch file.](https://stackoverflow.com/questions/11928013/node-env-is-not-recognized-as-an-internal-or-external-command-operable-comman/40967643)", use [win-node-env](https://www.npmjs.com/package/win-node-env)*
+>*WINDOWS USER NOTE: if you're on Windows and getting an error like:"['NODE_ENV' is not recognized as an internal or external command, operable program or batch file.](https://stackoverflow.com/questions/11928013/node-env-is-not-recognized-as-an-internal-or-external-command-operable-comman/40967643)", use [win-node-env](https://www.npmjs.com/package/win-node-env)*
 
 The app is using `nodemon`. Any changes made (and saved) will cause the server to restart.
 
