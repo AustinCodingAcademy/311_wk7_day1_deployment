@@ -8,7 +8,7 @@ Initialize and run the app: `npm install` && `npm start`.
 
 The app is using `nodemon`. Any changes made (and saved) will cause the server to restart.
 
-Navigate to the `sql/connections.js` file and alter the following fields to reflect your database setup:
+Navigate to the `sql/connection.js` file and alter the following fields to reflect your database setup:
 
 ```yaml
   host: 'localhost',
