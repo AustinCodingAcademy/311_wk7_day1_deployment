@@ -7,9 +7,9 @@ class Connection {
 
       const config = {
         connectionLimit: 100,
-        host: 'localhost',
+        host: '34.66.70.25',
         user: 'root',
-        password: 'password',
+        password: 'H20pol014',
         database: 'admin'
       }
 
