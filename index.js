@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const usersRouter = require('./routers/users');
 const authRouter = require('./routers/auth');
 const { logger } = require('./middleware')
+require('dotenv').config()
 
 const app = express();
 const port = process.env.PORT || 4001;
@@ -13,7 +14,7 @@ app.use('/users', usersRouter)
 app.use('/auth', authRouter)
 
 app.get('/', (req, res) => {
-  res.send('Welcome to our server!')
+  res.send('Welcome to our updated server!')
 })
 
 app.listen(port, () => {
